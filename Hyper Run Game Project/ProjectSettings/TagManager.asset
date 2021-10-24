@@ -11,6 +11,7 @@ TagManager:
   - respawn
   - Jump1
   - Traiangal
+  - mark
   layers:
   - Default
   - TransparentFX
