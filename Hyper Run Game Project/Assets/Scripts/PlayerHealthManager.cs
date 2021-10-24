@@ -56,7 +56,9 @@ public class PlayerHealthManager : MonoBehaviour
 
         if (Coll.tag == "Traiangal")
         {
+            
             Destroy(gameObject);
+            SpawnPlayer2();
 
         }
     }

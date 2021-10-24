@@ -45,6 +45,7 @@ public class PlayerController : MonoBehaviour
         //Player Climb
         else if (VarVal > 0.1 && Climb == true)
         {
+            Rb.useGravity = false;
             transform.Translate(0, speed * Time.deltaTime, 0);
         }
 
@@ -94,6 +95,8 @@ public class PlayerController : MonoBehaviour
         if (Coll.tag == "Climb")
         {
             Climb = true;
+            Run = false;
+            Jump = false;
         }
 
        
