@@ -9,6 +9,8 @@ TagManager:
   - Climb
   - Hummer
   - respawn
+  - Jump1
+  - Traiangal
   layers:
   - Default
   - TransparentFX

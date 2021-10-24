@@ -7,7 +7,9 @@ public class PlayerHealthManager : MonoBehaviour
     public Animator anim;
 
     public GameObject Player;
-    public Transform SpawnPos;
+
+    public Transform SpawnPos1;
+    public Transform SpawnPos2;
 
 
     bool Fall;
@@ -25,10 +27,15 @@ public class PlayerHealthManager : MonoBehaviour
         anim.SetBool("Fall", Fall);
     }
 
-    void SpawnPlayer()
+    void SpawnPlayer1()
     {
-        Instantiate(Player,SpawnPos.position ,Quaternion.identity );
+        Instantiate(Player,SpawnPos1.position ,Quaternion.identity );
     
+    }
+
+    void SpawnPlayer2()
+    {
+        Instantiate(Player, SpawnPos2.position, Quaternion.identity);
     }
 
     //Player Management (Respawn / Dead / Fall)
@@ -44,8 +51,12 @@ public class PlayerHealthManager : MonoBehaviour
         {
             Fall = false;
             Destroy(gameObject);
-            SpawnPlayer();
-            
+            SpawnPlayer1();
+        }
+
+        if (Coll.tag == "Traiangal")
+        {
+            Destroy(gameObject);
 
         }
     }

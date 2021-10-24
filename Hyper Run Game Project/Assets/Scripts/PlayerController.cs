@@ -68,12 +68,21 @@ public class PlayerController : MonoBehaviour
 
         if (Coll.tag == "Jump")
         {
+            JumpSpeed = 35f;
             Debug.Log("jump");
             Jump = true;
             Run = false;
             Climb = false;
         }
 
+        if (Coll.tag == "Jump1")
+        {
+            JumpSpeed = 20f;
+            Run = false;
+            Climb = false;
+            Jump = true;
+        
+        }
         if (Coll.tag == "Ground")
         {
             Debug.Log("jump false");
