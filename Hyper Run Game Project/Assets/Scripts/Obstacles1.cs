@@ -34,14 +34,7 @@ public class Obstacles1 : MonoBehaviour
         if (Coll.tag == "turn")
         {
             Debug.Log("Collied");
-            if (moveRight)
-            {
-                moveRight = false;
-            }
-            else
-            {
-                moveRight = true;
-            }
+            
         }
     }
 }
