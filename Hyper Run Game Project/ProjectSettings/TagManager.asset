@@ -12,6 +12,7 @@ TagManager:
   - Jump1
   - Traiangal
   - mark
+  - turn
   layers:
   - Default
   - TransparentFX
