@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     bool Jump;
     bool Run;
     bool Climb;
+    bool Finish = false;
 
 
 
@@ -56,11 +57,13 @@ public class PlayerController : MonoBehaviour
             transform.position += Vector3.forward * Time.deltaTime * JumpSpeed;
         }
 
+       
 
         //Set Animator Parameters to the variables
         anim.SetFloat("Run", VarVal);
         anim.SetBool("jump", Jump);
         anim.SetBool("climb", Climb);
+        anim.SetBool("Dance", Finish);
     }
 
 
@@ -97,6 +100,13 @@ public class PlayerController : MonoBehaviour
             Climb = true;
             Run = false;
             Jump = false;
+        }
+        if (Coll.tag == "finish")
+        {
+            Finish = true;
+            Run = false;
+            Jump = false;
+        
         }
 
        

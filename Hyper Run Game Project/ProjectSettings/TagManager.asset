@@ -13,6 +13,7 @@ TagManager:
   - Traiangal
   - mark
   - turn
+  - finish
   layers:
   - Default
   - TransparentFX
