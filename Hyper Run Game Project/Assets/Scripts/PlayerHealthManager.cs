@@ -30,10 +30,7 @@ public class PlayerHealthManager : MonoBehaviour
         anim.SetBool("Fall", Fall);
 
 
-        if (Fall)
-        {
-            Collider.isTrigger = true;
-        }
+        
     }
 
     void SpawnPlayer1()
@@ -52,9 +49,10 @@ public class PlayerHealthManager : MonoBehaviour
     {
         if (Coll.tag == "Hummer")
         {
+            Fall = true;
             SoundManager.PlaySound("hit");
             Debug.Log("Hummer Collied");
-            Fall = true;
+            
         }
 
         if (Coll.tag == "respawn")

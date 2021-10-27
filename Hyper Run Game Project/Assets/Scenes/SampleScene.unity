@@ -2415,8 +2415,8 @@ GameObject:
   - component: {fileID: 320904117}
   - component: {fileID: 320904118}
   m_Layer: 0
-  m_Name: dead panel
-  m_TagString: respawn
+  m_Name: Fall panel
+  m_TagString: fall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2429,7 +2429,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 320904116}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.89, y: 15.7, z: 36.78}
+  m_LocalPosition: {x: 21.89, y: 22, z: 36.78}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1130308479}
@@ -3916,6 +3916,50 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 590615072}
   m_Mesh: {fileID: 6239881831769578202, guid: 0aa7281900ccbbf4d99c0d46e67ab70b, type: 3}
+--- !u!1 &596401005
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 596401006}
+  - component: {fileID: 596401007}
+  m_Layer: 0
+  m_Name: dead panel (1)
+  m_TagString: respawn
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &596401006
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596401005}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 21.89, y: 15.9, z: 36.78}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1130308479}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &596401007
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596401005}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 34.89311, y: 1.3144188, z: 77.21338}
+  m_Center: {x: -2.0004253, y: 0.1572094, z: -5.5350266}
 --- !u!1 &601245710
 GameObject:
   m_ObjectHideFlags: 0
@@ -7797,6 +7841,7 @@ Transform:
   - {fileID: 927228114}
   - {fileID: 550617142}
   - {fileID: 320904117}
+  - {fileID: 596401006}
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16443,7 +16488,7 @@ MonoBehaviour:
   Player: {fileID: 1469556210920688566, guid: 7ceb6e7d540b8ae49a497a985eda8693, type: 3}
   SpawnPos1: {fileID: 1773088658}
   SpawnPos2: {fileID: 1382145492}
-  Coll: {fileID: 1891628886}
+  Collider: {fileID: 0}
 --- !u!95 &919132149014292233
 Animator:
   serializedVersion: 3

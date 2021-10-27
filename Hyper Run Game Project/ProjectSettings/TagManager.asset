@@ -18,6 +18,7 @@ TagManager:
   - cam3
   - cam4
   - cam5
+  - fall
   layers:
   - Default
   - TransparentFX
