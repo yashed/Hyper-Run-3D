@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     bool Jump;
     bool Run;
     bool Climb;
-    bool Finish = false;
+    public static bool Finish = false;
 
 
 
@@ -103,6 +103,7 @@ public class PlayerController : MonoBehaviour
         }
         if (Coll.tag == "finish")
         {
+            SoundManager.PlaySound("finish");
             Finish = true;
             Run = false;
             Jump = false;

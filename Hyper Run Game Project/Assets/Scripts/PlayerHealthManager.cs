@@ -7,10 +7,12 @@ public class PlayerHealthManager : MonoBehaviour
     public Animator anim;
 
     public GameObject Player;
+   
 
     public Transform SpawnPos1;
     public Transform SpawnPos2;
 
+    public BoxCollider Collider;
 
     bool Fall;
 
@@ -18,6 +20,7 @@ public class PlayerHealthManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Collider.isTrigger = false;
         anim = GetComponent<Animator>();
     }
 
@@ -25,6 +28,12 @@ public class PlayerHealthManager : MonoBehaviour
     void Update()
     {
         anim.SetBool("Fall", Fall);
+
+
+        if (Fall)
+        {
+            Collider.isTrigger = true;
+        }
     }
 
     void SpawnPlayer1()
@@ -43,6 +52,7 @@ public class PlayerHealthManager : MonoBehaviour
     {
         if (Coll.tag == "Hummer")
         {
+            SoundManager.PlaySound("hit");
             Debug.Log("Hummer Collied");
             Fall = true;
         }
@@ -56,9 +66,15 @@ public class PlayerHealthManager : MonoBehaviour
 
         if (Coll.tag == "Traiangal")
         {
-            
+            SoundManager.PlaySound("hit");
             Destroy(gameObject);
             SpawnPlayer2();
+
+        }
+
+        if(Coll.tag == "fall")
+        {
+            SoundManager.PlaySound("fall");
 
         }
     }
