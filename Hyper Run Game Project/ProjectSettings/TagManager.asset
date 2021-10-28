@@ -19,6 +19,7 @@ TagManager:
   - cam4
   - cam5
   - fall
+  - right
   layers:
   - Default
   - TransparentFX

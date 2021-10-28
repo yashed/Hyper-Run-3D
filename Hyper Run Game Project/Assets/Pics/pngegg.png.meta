@@ -26,6 +26,9 @@ TextureImporter:
   - first:
       213: 7146570984753549674
     second: pngegg_7
+  - first:
+      213: -7211625423188279565
+    second: pngegg_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -338,7 +341,7 @@ TextureImporter:
         width: 170
         height: 176
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -346,6 +349,27 @@ TextureImporter:
       bones: []
       spriteID: a61595c4278bd2360800000000000000
       internalID: 7146570984753549674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngegg_8
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 117
+        width: 117
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3febfade2e82beb90800000000000000
+      internalID: -7211625423188279565
       vertices: []
       indices: 
       edges: []
