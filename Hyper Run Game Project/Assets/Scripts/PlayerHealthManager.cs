@@ -20,7 +20,7 @@ public class PlayerHealthManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Collider.isTrigger = false;
+        
         anim = GetComponent<Animator>();
     }
 
@@ -35,6 +35,7 @@ public class PlayerHealthManager : MonoBehaviour
 
     void SpawnPlayer1()
     {
+        Collider.isTrigger = false;
         Instantiate(Player,SpawnPos1.position ,Quaternion.identity );
     
     }
@@ -49,6 +50,7 @@ public class PlayerHealthManager : MonoBehaviour
     {
         if (Coll.tag == "Hummer")
         {
+            Collider.isTrigger = true;
             Fall = true;
             SoundManager.PlaySound("hit");
             Debug.Log("Hummer Collied");

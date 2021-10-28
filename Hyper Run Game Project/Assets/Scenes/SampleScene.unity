@@ -2043,7 +2043,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 229916507}
   m_LocalRotation: {x: -0, y: -0.51920104, z: -0, w: 0.8546522}
-  m_LocalPosition: {x: -9.2, y: -18, z: -18.87}
+  m_LocalPosition: {x: -8.55, y: -18, z: -23.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1628809754}
@@ -16488,7 +16488,7 @@ MonoBehaviour:
   Player: {fileID: 1469556210920688566, guid: 7ceb6e7d540b8ae49a497a985eda8693, type: 3}
   SpawnPos1: {fileID: 1773088658}
   SpawnPos2: {fileID: 1382145492}
-  Collider: {fileID: 0}
+  Collider: {fileID: 1891628886}
 --- !u!95 &919132149014292233
 Animator:
   serializedVersion: 3
