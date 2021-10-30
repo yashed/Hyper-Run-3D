@@ -19,6 +19,12 @@ public class PlayerController : MonoBehaviour
     bool Climb;
     public static bool Finish = false;
 
+    //add partical systems
+    public ParticleSystem P1;
+    public ParticleSystem P2;
+    public ParticleSystem P3;
+    public ParticleSystem P4;
+
 
 
     // Start is called before the first frame update
@@ -107,6 +113,11 @@ public class PlayerController : MonoBehaviour
             Finish = true;
             Run = false;
             Jump = false;
+
+            P1.Play(true);
+            P2.Play(true);
+            P3.Play(true);
+            P4.Play(true);
         
         }
 

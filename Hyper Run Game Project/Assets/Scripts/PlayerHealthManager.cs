@@ -59,14 +59,17 @@ public class PlayerHealthManager : MonoBehaviour
 
         if (Coll.tag == "respawn")
         {
-            Fall = false;
-            Destroy(gameObject);
+            
+           // Destroy(gameObject);
             SpawnPlayer1();
+            Player.SetActive(false);
+
         }
 
         if (Coll.tag == "Traiangal")
         {
             SoundManager.PlaySound("hit");
+
             Destroy(gameObject);
             SpawnPlayer2();
 
@@ -76,6 +79,11 @@ public class PlayerHealthManager : MonoBehaviour
         {
             SoundManager.PlaySound("fall");
 
+        }
+
+        if (Coll.tag == "reset")
+        {
+            Fall = false;
         }
     }
 }
