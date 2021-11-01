@@ -44,7 +44,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 1
+  m_GIWorkflowMode: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -7372,6 +7372,7 @@ GameObject:
   - component: {fileID: 335713318}
   - component: {fileID: 335713317}
   - component: {fileID: 335713322}
+  - component: {fileID: 335713323}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -7489,7 +7490,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Timer1: {fileID: 210895376}
   Timer2: {fileID: 1945986198}
+  Slider: {fileID: 1287279646}
   GameOverPanel: {fileID: 1452763693}
+--- !u!114 &335713323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335713316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32282b9159fc63c49b54c4f8e12d3d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelPanel: {fileID: 0}
 --- !u!1 &340420125
 GameObject:
   m_ObjectHideFlags: 0
@@ -20292,7 +20307,7 @@ GameObject:
   - component: {fileID: 1511217532}
   - component: {fileID: 1511217531}
   m_Layer: 5
-  m_Name: Button
+  m_Name: MainMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20359,7 +20374,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1511217532}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 335713323}
+        m_MethodName: MainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1511217532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20890,7 +20916,7 @@ GameObject:
   - component: {fileID: 1599004154}
   - component: {fileID: 1599004153}
   m_Layer: 5
-  m_Name: Button
+  m_Name: NextLevel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

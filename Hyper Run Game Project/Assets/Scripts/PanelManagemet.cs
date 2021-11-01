@@ -7,6 +7,7 @@ public class PanelManagemet : MonoBehaviour
 {
     public Text Timer1;
     public Text Timer2;
+    public GameObject Slider;
 
     public GameObject GameOverPanel;
 
@@ -22,6 +23,7 @@ public class PanelManagemet : MonoBehaviour
         if (PlayerController.Finish)
         {
             Destroy(Timer1);
+            Slider.SetActive(false);
             GameOverPanel.SetActive(true);
         }
     }
