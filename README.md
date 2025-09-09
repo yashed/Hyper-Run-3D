@@ -50,7 +50,7 @@ Here are some preview images of the game:
 
 1. Clone this repository:
 ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/yashed/Hyper-Run-3D.git
 ```
 
 2. Open the project in **Unity Hub** (use the same Unity version you built the game with).
