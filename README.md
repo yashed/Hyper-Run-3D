@@ -9,7 +9,6 @@ A simple **hypercasual 3D game** built with **Unity** where the player runs thro
 ```bash
 Assets/
 ├── Animation/        # Game animations
-├── Animation 1/      # Extra animation assets
 ├── Fonts/            # Fonts used in UI
 ├── Items/            # Collectible items & objects
 ├── Krearthur/        # Character/asset models
@@ -24,7 +23,6 @@ Assets/
 GameImages/           # Screenshots for README
 Packages/
 ProjectSettings/
-Library/              # Unity auto-generated files
 ```
 
 ---
@@ -41,9 +39,9 @@ Library/              # Unity auto-generated files
 
 Here are some preview images of the game:
 
-![Gameplay Screenshot 1](GameImages\start-view.png)  
-![Gameplay Screenshot 2](GameImages\obstacles-view.png)  
-![Gameplay Screenshot 3](GameImages\project-view.png)  
+![Gameplay Screenshot 1](GameImages/start-view.png)  
+![Gameplay Screenshot 2](GameImages/obstacles-view.png)  
+![Gameplay Screenshot 3](GameImages/project-view.png)  
 
 
 ---
